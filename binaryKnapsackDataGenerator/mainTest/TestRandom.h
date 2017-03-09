@@ -9,17 +9,19 @@ class TestRandom : public TestFixture
 {
     CPPUNIT_TEST_SUITE(TestRandom);
     CPPUNIT_TEST(testThatFirstRandomNumberIsSeeded);
-    CPPUNIT_TEST(testThatFirstRandomNumberIsSeededDifferently);
+   CPPUNIT_TEST(testThatFirstRandomNumberIsSeededDifferently);
     CPPUNIT_TEST(testThatRandomFloatIsCorrect);
+  //  CPPUNIT_TEST(PrintBoardTest);
     CPPUNIT_TEST_SUITE_END();
 
 public:
-    void setUp(void);
+   void setUp(void);
     void tearDown(void);
+   // void PrintBoardTest();
 
 protected:
     void testThatFirstRandomNumberIsSeeded();
-    void testThatFirstRandomNumberIsSeededDifferently();
+	void testThatFirstRandomNumberIsSeededDifferently();
     void testThatRandomFloatIsCorrect();
 
 private:

@@ -6,14 +6,14 @@ using namespace std;
 class PegJump
 {
 	public:
-		void failNotEqual(double value, double v)
+		void failNotEqual(double value, double v) //Just emulates CPPUNIT because it wont work
 		{
 			if(value == v)
 				cout << "Test Passed"<<endl;
 			else cout << "Test Failed"<<endl;
 		}
 		
-		void PrintBoardTest()
+		void PrintBoardTest() //unit test bascially
 		{
 			int A[15] = {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 			double value = Print_Board(A);

@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include "TestRandom.h"
 #include "../RandomNumberGeneratorImpl.h"
+//#include "../main.h"
 
 using namespace std;
 
@@ -56,3 +57,27 @@ void TestRandom::testThatRandomFloatIsCorrect() {
     float fifthActual = testObject.randomFloat();
     CPPUNIT_ASSERT_DOUBLES_EQUAL(fifthExpected, fifthActual, 0.01);
 }
+/*
+void TestRandom::PrintBoardTest() 
+		{
+			int A[15] = {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+			float value = Print_Board(A);
+			float v = 0;
+			CPPUNIT_ASSERT_DOUBLES_EQUAL(v,value ,0.01);
+		}
+		
+		
+		int main()
+		{
+			return 0;
+		}
+
+*/
+
+
+
+
+
+
+
+
