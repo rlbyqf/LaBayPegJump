@@ -12,7 +12,7 @@ double Print_Board(int A[])
 	cout << "|    3 4 5     | |      " << A[3] <<" "<< A[4]<<" " << A[5] <<"     |"<< endl;
 	cout << "|   6 7 8 9    | |     " << A[6] <<" "<< A[7]<<" "<<A[8]<<" "<<A[9]<<"    |"<<endl;
 	cout << "|10 11 12 13 14| |    " << A[10] << " "<<A[11]<<" "<<A[12]<<" "<<A[13]<<" "<<A[14]<<"   |"<<endl;
-	return 150;
+	return 0;
 }
 
 
@@ -421,67 +421,67 @@ int Reset(int A[])
 
 int Auto_Solve(int A[])
 {
-	cout <<"Jump 3 to 0"<<endl;
+	cout <<"Jump from 3 to 0"<<endl;
 	A[3]=0;
 	A[1]=0;
 	A[0]=1;
 	
-	cout <<"Jump 5 to 3"<<endl;
+	cout <<"Jump from 5 to 3"<<endl;
 	A[5]=0;
 	A[4]=0;
 	A[3]=1;
 	
-	cout <<"Jump 0 to 5"<<endl;
+	cout <<"Jump from 0 to 5"<<endl;
 	A[0]=0;
 	A[2]=0;
 	A[5]=1;
 	
-	cout <<"Jump 6 to 1"<<endl;
+	cout <<"Jump from 6 to 1"<<endl;
 	A[6]=0;
 	A[3]=0;
 	A[1]=1;
 	
-	cout <<"Jump 12 to 3"<<endl;
+	cout <<"Jump from 12 to 3"<<endl;
 	A[12]=0;
 	A[6]=0;
 	A[3]=1;
 	
-	cout <<"Jump 1 to 6"<<endl;
+	cout <<"Jump from 1 to 6"<<endl;
 	A[1]=0;
 	A[3]=0;
 	A[6]=1;
 	
-	cout <<"Jump 9 to 7"<<endl;
+	cout <<"Jump from 9 to 7"<<endl;
 	A[9]=0;
 	A[8]=0;
 	A[7]=1;
 	
-	cout <<"Jump 6 to 8"<<endl;
+	cout <<"Jump from 6 to 8"<<endl;
 	A[6]=0;
 	A[7]=0;
 	A[8]=1;
 	
-	cout <<"Jump 14 to 12"<<endl;
+	cout <<"Jump from 14 to 12"<<endl;
 	A[14]=0;
 	A[13]=0;
 	A[12]=1;
 	
-	cout <<"Jump 11 to 13"<<endl;
+	cout <<"Jump from 11 to 13"<<endl;
 	A[11]=0;
 	A[12]=0;
 	A[13]=1;
 	
-	cout <<"Jump 5 to 12"<<endl;
+	cout <<"Jump from 5 to 12"<<endl;
 	A[5]=0;
 	A[8]=0;
 	A[12]=1;
 	
-	cout <<"Jump 13 to 11"<<endl;
+	cout <<"Jump from 13 to 11"<<endl;
 	A[13]=0;
 	A[12]=0;
 	A[11]=1;
 	
-	cout <<"Jump 10 to 12"<<endl;
+	cout <<"Jump from 10 to 12"<<endl;
 	A[10]=0;
 	A[11]=0;
 	A[12]=1;
